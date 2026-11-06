@@ -7,7 +7,9 @@ authors = [
     { name = "Liel Shoval", email = "zaraf@g.jct.ac.il" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "gradio>=6.31.0",
+]
 
 [project.scripts]
 natib = "natib:main"
