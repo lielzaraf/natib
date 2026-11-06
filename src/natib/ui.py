@@ -62,9 +62,10 @@ def analyze_text(text: str) -> str:
 
 demo = gr.Interface(
     fn=analyze_text,
-    inputs=gr.Textbox(label="תיאור המפגע", lines=5, placeholder="תארו את המפגע"),
+    inputs=gr.Textbox(label="תיאור המפגע", lines=5, placeholder="תארו את המפגע", rtl=True),
     outputs=gr.Textbox(label="סיכום הפנייה", lines=7, rtl=True),
     title="דיווח על מפגע",
+    flagging_mode="never",
 )
 
 
